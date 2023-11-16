@@ -167,7 +167,7 @@ def detect(opt, save_img=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
-                        default='weights/yolov5s.pt', help='model.pt path(s)')
+                        default='weights/AI-POC-eDrug-Formulary-v0.0.1.pt', help='model.pt path(s)')
     # file/folder, 0 for webcam
     parser.add_argument('--source', type=str,
                         default='data/images', help='source')
@@ -207,7 +207,7 @@ if __name__ == '__main__':
 
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
-            for opt.weights in ['yolov5s.pt', 'yolov5m.pt', 'yolov5l.pt', 'yolov5x.pt']:
+            for opt.weights in ['yolov5s.pt', 'yolov5m.pt', 'yolov5l.pt', 'yolov5x.pt','AI-POC-eDrug-Formulary-v0.0.1.pt']:
                 detect()
                 strip_optimizer(opt.weights)
         else:
