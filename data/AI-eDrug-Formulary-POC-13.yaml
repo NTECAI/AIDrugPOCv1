@@ -1,0 +1,18 @@
+names:
+- FAMO01_ASIDE
+- FAMO01_BSIDE
+- FAMO01_OVERVIEW
+- FAMO02_ASIDE
+- FAMO02_BSIDE
+- FAMO02_OVERVIEW
+nc: 6
+roboflow:
+  license: CC BY 4.0
+  project: ai-edrug-formulary-poc-13-11-23
+  url: https://universe.roboflow.com/raymond-chan/ai-edrug-formulary-poc-13-11-23/dataset/15
+  version: 15
+  workspace: raymond-chan
+path: ../yolov5/AI-eDrug-Formulary-POC-13  # dataset root dir
+test: test/images
+train: train/images
+val: valid/images
